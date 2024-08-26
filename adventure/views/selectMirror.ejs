@@ -29,18 +29,19 @@
 		<% } %>
 		<% if (download.IPFSPath) { %>
 		<h2>IPFS</h2>
-		<p>This file is also available over <a href="https://ipfs.io/">IPFS</a>. IPFS is a decentralised distributed file store, and thus downloads do not count towards your daily download limit.</p>
+		<p>This file is also available over <a href="https://ipfs.tech/">IPFS</a>. IPFS is a decentralised P2P distributed file store, and thus downloads do not count towards your daily download limit.</p>
 
 		<p><i>Warning: IPFS support is currently experimental and your download might not work.</i></p>
 
 		<p id="localIPFSClientMessage">
-			No local IPFS client has been detected. To use the IPFS client, visit <a href="https://ipfs.io">ipfs.io</a> to install the IPFS Companion browser extention and download and run a client.<br />
+			No local <a href="https://ipfs.tech">IPFS</a> client has been detected. To use the IPFS natively, <a href="https://docs.ipfs.tech/install/ipfs-companion/">install the IPFS Companion browser extension</a and IPFS node such as <a href="https://docs.ipfs.tech/install/command-line/">command-line Kubo</a>, or user-friendly <a href="https://docs.ipfs.tech/install/ipfs-desktop/">IPFS Desktop</a>.<br />
 			
 		</p>
 
 		<p>Download through</p>
 		<ul>
-			<li><a href="https://cloudflare-ipfs.com<%=download.IPFSPath%>">Cloudflare IPFS Gateway</a></li>
+			<li><a href="https://ipfs.io<%=download.IPFSPath%>">IPFS.io Gateway</a></li>
+			<li><a href="https://ipfs.github.io/public-gateway-checker/">Community-run IPFS Gateways</a></li>
 			<li id="localClientLink" style="display: none;">Local client: <a href="dweb:<%=download.IPFSPath%>"><%=download.IPFSPath%></a></li>
 		</ul>
 		<script>
